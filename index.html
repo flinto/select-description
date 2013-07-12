@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flinto Select Description</title>
+
+    <style type="text/css">
+      body { color: #333333; -webkit-font-smoothing: antialiased; font-family: helvetica, arial, sans-serif; line-height: 1.3em; }
+      .container { width: 300px; margin: 100px auto; }
+      .container select { width: 200px; }
+    </style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="jquery.flinto-select-description.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('select').selectDescription()
+
+      })
+    </script>
+  </head>
+
+  <body>
+
+  	<div class="container">
+
+      <select>
+  			<option value="jillette" data-description="penn-jillette">Penn Jillette</option>
+  			<option value="cardini" data-description="caesar-cardini">Cardini</option>
+  			<option value="houdini" data-description="harry-houdini">Harry Houdini</option>
+  		</select>
+
+  		<p id="penn-jillette">An American illusionist, comedian, musician, actor, and best-selling author.</p>
+  		<p id="caesar-cardini">A master magician whose career spanned almost half a century.</p>
+  		<p id="harry-houdini">A Hungarian-American stunt performer and magician noted for his sensational escape acts.</p>
+
+  	</div>
+
+  </body>
+</html>
